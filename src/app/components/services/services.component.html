@@ -1,0 +1,75 @@
+
+<header>
+  <div  class="head_top">
+     <app-navc></app-navc>
+  </div>
+</header>
+&backcong;
+
+ <div id="" class="best">
+    <div class="container">
+       <div class="row">
+          <div class="col-md-12">
+        
+             <div class="titlepage">
+                <h2>PET'S SERVICES</h2>
+                <span>Pet health services provide medical care for pets to ensure they are healthy and happy.This includes providing
+                    foods, drugs and nutrition advice. Pet food is designed to meet the nutritional needs of your pet and is available
+                    in a variety of flavors and types. Pet drugs are prescribed by veterinans to treat illnesses or injuries.
+                    nutrition advice is given to help ensure that your pet is getting the Right balance of nutrients in their diet.
+                    Pet health services also prefer preventive care, such as vaccinations and regular chech-ups, to help keep your pet healthy
+                    and peventive illnesses.
+                </span>
+             </div>
+          </div>
+       </div>
+       <div class="row">
+          <div class="col-md-4">
+            <a data-toggle="modal" data-target="#food">
+             <div class="best_box">
+                <h4> <br>Pet's Food</h4>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a routerLink="">
+             <div class="best_box">
+                <h4> <br> Pet's Drugs</h4>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a routerLink="">
+             <div class="best_box">
+                <h4> <br> Care your pet's</h4>
+             </div>
+            </a>
+          </div>
+       </div>
+    </div>
+ </div>
+ <div class="modal fade" id="food" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-md" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">PET'S NAME and THEIR FOODS</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <ul>
+            <li routerLink="/foods" data-dismiss="modal">DOG</li>
+            <li>COW</li>
+            <li>GOAT</li>
+            <li>CAT</li>
+            <li>CHICKEN</li>
+            <li>RABBIT</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-light" data-dismiss="modal">close</button>
+        </div>
+      </div>
+    </div>
+  </div>

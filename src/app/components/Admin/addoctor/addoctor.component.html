@@ -1,0 +1,94 @@
+
+  <div class="container-scroller">
+    <app-navbar></app-navbar>
+    <div class="container-fluid page-body-wrapper">
+    <app-sidebar></app-sidebar>
+      <!-- partial -->
+      <div class="main-panel">
+        <div class="content-wrapper">
+          <div class="page-header">
+            <h3 class="page-title">
+                Add New doctor information
+            </h3>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Forms</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Validation</li>
+                </ol>
+            </nav>
+          </div>
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Add New doctor information</h4>
+                  <form (ngSubmit)="onSubmit()" class="cmxform" id="signupForm" method="get" action="#">
+                    <fieldset>
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <label for="firstname">Firstname</label>
+                        <input id="firstname" class="form-control" name="firstname" [(ngModel)]="doctor.firstName" type="text">
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <label for="lastname">Lastname</label>
+                        <input id="lastname" class="form-control" name="lastname" [(ngModel)]="doctor.lastName"  type="text">
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <label for="firstname">phone number</label>
+                        <input id="firstname" class="form-control" name="firstname" [(ngModel)]="doctor.phoneNumber"  type="number">
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <label for="lastname">specialized on</label>
+                        <input id="lastname" class="form-control" name="lastname" [(ngModel)]="doctor.specialization"  type="text">
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <div class="form-group">
+                        <label for="lastname">Email</label>
+                        <input id="lastname" class="form-control" name="lastname" [(ngModel)]="doctor.workingExperience" type="text">
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <div class="form-group">
+                        <label for="lastname">Address</label>
+                        <input id="lastname" class="form-control" name="lastname" [(ngModel)]="doctor.address" type="text">
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <div class="form-group">
+                        <label for="lastname">Email</label>
+                        <input id="lastname" class="form-control" name="lastname" [(ngModel)]="doctor.email" type="email">
+                      </div>
+                    </div>
+
+                  </div>
+                     
+                      <input class="btn btn-primary" type="submit" value="Submit">
+                    
+                    <a routerLink="/dash">
+                      <input class="btn btn-primary"  value="Cancel" (click)="onCancel()">
+                    </a>
+                    </fieldset>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer class="footer">
+          <div class="d-sm-flex justify-content-center justify-content-sm-between">
+            <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Copyright © 2023 </span>
+            
+          </div>
+        </footer>
+      </div>
+    </div>
+  </div>
+ 
